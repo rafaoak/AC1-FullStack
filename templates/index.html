@@ -2,11 +2,26 @@
     <head>
         <title>Meu primeiro site :D</title>
        </head>
+<style>
 
+    body{
+        
+        color: deeppink;
+        font-family: fantasy;
+        padding: 150px;
+        margin: auto;
+        
+        
+    }
+
+   
+</style>
     <body>
-        <p style="color: deeppink;"> Aprovado ou Reprovado </p>
-
-        <div>
+        <div align="center">Aprovado ou Reprovado</div>
+        <p align="center" > Insira suas notas! </p>
+          
+        
+        <div align="center">
             <form method="get">
                 Primeira Nota:
                 <input type="text" name="primeira">
@@ -19,7 +34,7 @@
         </div>
 
         {% if resultado %}
-        <div>
+        <div align="center">
             {{resultado}} com média {{media}}!!!
         </div>
         {% endif %}
